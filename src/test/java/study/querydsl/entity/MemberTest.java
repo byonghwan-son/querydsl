@@ -39,15 +39,14 @@ class MemberTest {
     em.flush();
     em.clear();
 
+  }
+
+  @Test
+  void testEntity() {
     List<Member> result = em.createQuery("select m from Member m", Member.class).getResultList();
     for (Member member : result) {
       log.info("member = {}", member);
       log.info("member.team = {}", member.getTeam());
     }
-  }
-
-  @Test
-  void testEntity() {
-
   }
 }
