@@ -23,7 +23,6 @@ import study.querydsl.entity.Team;
 import java.util.List;
 
 import static com.querydsl.jpa.JPAExpressions.select;
-import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static study.querydsl.entity.QMember.member;
 import static study.querydsl.entity.QTeam.team;
@@ -513,7 +512,7 @@ public class QuerydslBasicTest {
     extracted(fetch);
   }
 
-  private static <T> void extracted(List<T> fetch) {
+  private static <T> void extracted(Iterable<T> fetch) {
     for (T fetch1 : fetch) {
       log.info("fetch = {}", fetch1);
     }

@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import study.querydsl.entity.Hello;
 import study.querydsl.entity.QHello;
 
-import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j

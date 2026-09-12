@@ -10,8 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @Slf4j
 @SpringBootTest
 @Transactional
